@@ -9,6 +9,8 @@ function play() {
     var maxMoney = 0;
     var rolls = 0;
     var maxRolls = 0;
+
+    
     if (money <= 0) {
         alert("Please place a bid greater that $0")
     }
