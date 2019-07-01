@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <title>Lucky Seven's</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lucky Sevens</h1>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col-md">
+                Starting Bet: $
+                <input id="starting-bet" value="0.00" />
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-success btn-lg" onclick="play()">Play</button>
+        </div>
+        <hr>
+        <div class="row" id="results" style="display:none">
+            <div class="col-md">
+                    <h2>Results</h2>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Starting Bet</th>
+                            <td>
+                                <input id="startBet" type="text" value="" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Total Rolls before going broke</th>
+                            <td>
+                                <input id="totalRolls" type="number" value="" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Highest Amount Won</th>
+                            <td>
+                                <input id="maxMoney" type="text" value="" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Roll Count at Highest Amount Won</th>
+                            <td>
+                                <input id="maxRolls" type="number" value="" disabled>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-danger" id="reset" type="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="luckySevens.js"></script>
+</body>
+
+</html>
